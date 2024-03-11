@@ -1,9 +1,16 @@
-import { title } from "@/components/primitives";
+'use client'
+import { Textarea } from "@nextui-org/react";
+import React, { Component } from 'react'; 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
-export default function BlogPage() {
-	return (
-		<div>
-			<h1 className={title()}>Blog</h1>
-		</div>
-	);
-}
+
+export default class NextJsCarousel extends Component { 
+	render() { 
+
+		
+		return ( 
+			<h1>hey</h1>
+			
+		); 
+	} 
+};

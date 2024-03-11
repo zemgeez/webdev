@@ -37,7 +37,7 @@ export const Navbar = () => {
 				input: "text-sm",
 			}}
 			endContent={
-				<Kbd className="hidden lg:inline-block" keys={["command"]}>
+				<Kbd className="hidden lg:block" keys={["command"]}>
 					K
 				</Kbd>
 			}
@@ -95,15 +95,7 @@ export const Navbar = () => {
 				</NavbarItem>
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
 				<NavbarItem className="hidden md:flex">
-					<Button
-            isExternal
-						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-100"
-						href={siteConfig.links.sponsor}
-						startContent={<SearchIcon className="text-danger" />}
-						variant="flat"
-					>Login /Register
-					</Button>
+					
 				</NavbarItem>
 			</NavbarContent>
 

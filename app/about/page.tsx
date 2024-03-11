@@ -10,7 +10,7 @@ export default function AboutPage() {
 		
 			<div>
 			
-			<Card className="bg-transparent bg-slate-600 shadow-lg">
+			<Card className=" bg-slate-600 shadow-lg">
 				<Image
 
 					
