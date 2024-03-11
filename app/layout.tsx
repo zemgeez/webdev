@@ -45,12 +45,7 @@ export default function RootLayout({
 							{children}
 						</main>
 						<footer className="w-full flex items-center justify-center py-3">
-							<Link
-								isExternal
-								className="flex items-center gap-1 text-current"
-								href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-								title="nextui.org homepage"
-							>
+							<Link href="https://cdac.in">
 								<span className="text-default-600">Developed By</span>
 								<p className="text-primary">C-DAC CINE</p>
 							</Link>
