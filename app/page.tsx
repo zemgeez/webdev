@@ -15,32 +15,37 @@ export default function home() {
 			
 
       
-			<div > 
+			<div> 
 			
-			<Carousel className="flex flex-col h-screen justify-end"> 
+        <Carousel
+          autoPlay
+          showThumbs={false}
+          interval={5000}
+          infiniteLoop
+          className="flex flex-col h-screen justify-end "> 
 				<div> 
 					<img src="./ft1.jpeg" alt="image1"/> 
-					<p className="legend">Image 1</p> 
+					<p className="fullscreen">Image 1</p> 
 
 				</div> 
 				<div> 
 					<img src="./gb1.jpeg" alt="image2" /> 
-					<p className="legend">Image 2</p> 
+					<p className="fullscreen">Image 2</p> 
 
 				</div> 
 				<div> 
 					<img src="./lb1.jpeg" alt="image3"/> 
-					<p className="legend">Image 3</p> 
+					<p className="fullscreen">Image 3</p> 
 
 				</div> 
 				<div> 
 					<img src="./sk1.jpg" alt="image4"/> 
-					<p className="legend">Image 4</p> 
+					<p className="fullscreen">Image 4</p> 
 
 				</div> 
 				<div> 
 					<img src="./ad1.jpeg" alt="image5"/> 
-					<p className="legend">Image 5</p> 
+					<p className="fullscreen">Image 5</p> 
 
 				</div> 
 			</Carousel> 

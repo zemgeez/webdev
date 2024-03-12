@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	},
 	description: siteConfig.description,
 	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "white" },
+		{ media: "(prefers-color-scheme: light)", color: "voilet" },
 		{ media: "(prefers-color-scheme: dark)", color: "black" },
 	],
 	icons: {
@@ -34,14 +34,14 @@ export default function RootLayout({
 			<head />
 			<body
 				className={clsx(
-					"min-h-screen bg-background font-sans antialiased",
+					"min-h-screen  font-sans antialiased gradient-bg",
 					fontSans.variable
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
-						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+						<main className="container mx-auto max-w-8xl pt-8 px-6 flex-grow gradient-bg">
 							{children}
 						</main>
 						<footer className="w-full flex items-center justify-center py-3">
