@@ -1,16 +1,19 @@
 'use client'
-import { Textarea } from "@nextui-org/react";
-import React, { Component } from 'react'; 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
+import EventPage from "@/components/event";
 
+export default function BlogPage() {
+	  return (
+		<div>
+			<EventPage/>
+			<EventPage/>
+				<h1>hello</h1>
+		</div>
+	  );
+}
 
-export default class NextJsCarousel extends Component { 
-	render() { 
 
 		
-		return ( 
-			<h1>hey</h1>
-			
-		); 
-	} 
-};
+
+
+
