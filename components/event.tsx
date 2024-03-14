@@ -51,8 +51,13 @@ export default function EventPage() {
 	  ];
 	
 	  return (
+<<<<<<< HEAD
 		<section className="w-screen grid">
 		<div className="gap-4 grid    grid-cols-3 xl:grid-cols-3">
+=======
+		<section className="flex-col">
+		<div className="gap-4 grid  grid-cols-3 xl:grid-cols-10">
+>>>>>>> member3
 		  {list.map((item, index) => (
 			<Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
 			  <CardBody className="overflow-visible p-0">
@@ -64,6 +69,12 @@ export default function EventPage() {
 				  className="w-full object-cover h-[240px] w-[400px]"
 				  src={item.img}
 				/>
+<<<<<<< HEAD
+=======
+					<div className="absolute h-full w-full bg-black/20 -bottom-10">
+
+					</div>
+>>>>>>> member3
 			  </CardBody>
 			  <CardFooter className="text-small justify-between">
 				<b>{item.title}</b>
@@ -78,6 +89,9 @@ export default function EventPage() {
 
 
 		
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> member3
