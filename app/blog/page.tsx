@@ -1,9 +1,24 @@
-import { title } from "@/components/primitives";
-
+'use client'
+import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
+import EventPage from "@/components/event";
+import CardTop from "@/components/cardTp";
 export default function BlogPage() {
-	return (
+	  return (
 		<div>
-			<h1 className={title()}>Blog</h1>
+			<CardTop/>
+			<br />
+			<EventPage/>
+			<br />
+			<EventPage/>
+			
+			
+				<h1>hello</h1>
 		</div>
-	);
+	  );
 }
+
+
+		
+
+
+

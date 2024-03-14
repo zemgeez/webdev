@@ -1,39 +1,39 @@
 'use client'
 import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
 
-export default function AboutPage() {
+export default function EventPage() {
 	const list = [
 		{
 		  title: "Event 1",
-		  img: "/images/fruit-1.jpeg",
+		  img: "./eve7.png",
 		  Date: "5-10-2023",
 		},
 		{
 		  title: "Event 2",
-		  img: "/images/fruit-2.jpeg",
+		  img: "./eve2.png",
 		  Date: "05-10-2023",
 		},
 		{
 		  title: "Event 3",
-		  img: "/images/fruit-3.jpeg",
+		  img: "./eve5.png",
 		  Date: "5-10-2023",
 		},
 		{
 		  title: "Event 4",
-		  img: "/images/fruit-4.jpeg",
+		  img: "./eve4.png",
 		  Date: "05-10-2023",
 		},
 		{
 		  title: "Event 5",
-		  img: "/images/fruit-5.jpeg",
+		  img: "./eve1.png",
 		  Date: "05-10-2023",
 		},
 		{
 		  title: "Event 6",
-		  img: "/images/fruit-6.jpeg",
+		  img: "./eve3.png",
 		  Date: "05-10-2023",
 		},
-		{
+/*		{
 		  title: "Event 7",
 		  img: "/images/fruit-7.jpeg",
 		  Date: "05-10-2023",
@@ -47,11 +47,12 @@ export default function AboutPage() {
 		  title: "Event 9",
 		  img: "/images/fruit-8.jpeg",
 		  Date: "05-10-2023",
-		},
+		},  */
 	  ];
 	
 	  return (
-		<div className="gap-1 grid grid-cols-2 sm:grid-cols-3">
+		<section className="flex-col">
+		<div className="gap-4 grid  grid-cols-3 xl:grid-cols-10">
 		  {list.map((item, index) => (
 			<Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
 			  <CardBody className="overflow-visible p-0">
@@ -60,9 +61,12 @@ export default function AboutPage() {
 				  radius="lg"
 				  width="100%"
 				  alt={item.title}
-				  className="w-full object-cover h-[140px]"
+				  className="w-full object-cover h-[240px] w-[400px]"
 				  src={item.img}
 				/>
+					<div className="absolute h-full w-full bg-black/20 -bottom-10">
+
+					</div>
 			  </CardBody>
 			  <CardFooter className="text-small justify-between">
 				<b>{item.title}</b>
@@ -71,11 +75,9 @@ export default function AboutPage() {
 			</Card>
 		  ))}
 		</div>
+		</section>
 	  );
 }
 
 
 		
-
-
-
