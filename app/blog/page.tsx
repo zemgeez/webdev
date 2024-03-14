@@ -1,24 +1,9 @@
-'use client'
-import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
-import EventPage from "@/components/event";
-import CardTop from "@/components/cardTp";
+import { title } from "@/components/primitives";
+
 export default function BlogPage() {
-	  return (
+	return (
 		<div>
-			<CardTop/>
-			<br />
-			<EventPage/>
-			<br />
-			<EventPage/>
-			
-			
-				<h1>hello</h1>
+			<h1 className={title()}>Blog</h1>
 		</div>
-	  );
+	);
 }
-
-
-		
-
-
-
