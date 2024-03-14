@@ -33,7 +33,7 @@ export const Navbar = () => {
 		<Input
 			aria-label="Search"
 			classNames={{
-				inputWrapper: "bg-default-100",
+				inputWrapper: "bordered bg-transparent rounded-lg border-black-2",
 				input: "text-sm",
 			}}
 			endContent={
@@ -49,6 +49,42 @@ export const Navbar = () => {
 			type="search"
 		/>
 	);
+	const navItems = [
+  {
+    label: 'Home',
+    href: './',
+    dropdown: [
+      { label: 'Dropdown 1', href: '/blog' },
+      { label: 'Dropdown 2', href: '/dropdown2' },
+    ],
+  },
+  {
+    label: 'Department',
+    href: '/navitem2',
+    dropdown: [
+      { label: 'Dropdown 3', href: '/dropdown3' },
+      { label: 'Dropdown 4', href: '/dropdown4' },
+    ],
+		},
+  
+   {
+    label: 'Academics',
+    href: '/study',
+    dropdown: [
+      { label: 'Dropdown 3', href: '/dropdown3' },
+      { label: 'Dropdown 4', href: '/dropdown4' },
+    ],
+		},
+    {
+    label: 'Events',
+    href: '/blog',
+    dropdown: [
+      { label: 'Dropdown 3', href: '/dropdown3' },
+      { label: 'Dropdown 4', href: '/dropdown4' },
+    ],
+  },
+  // Add more nav items as needed
+];
 
 	return (
 		<NextUINavbar maxWidth="xl" position="sticky">
@@ -59,28 +95,45 @@ export const Navbar = () => {
 						<p className="font-bold text-inherit">NIT SILCHAR</p>
 					</NextLink>
 				</NavbarBrand>
+				
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
-					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
-							<NextLink
-								className={clsx(
-									linkStyles({ color: "foreground" }),
-									"data-[active=false]:text-primary data-[active=false]:font-medium"
-								)}
-								color="foreground"
-								href={item.href}
-							>
-								{item.label}
-							</NextLink>
-						</NavbarItem>
+					
+					
+
+					
+					
+					{navItems.map((item) => (
+						<div className="group relative" key={item.href}>
+							<NavbarItem>
+								<NextLink
+									className={clsx(
+										linkStyles({ color: "foreground" }),
+										"data-[active=true]:text-primary data-[active=true]:font-medium"
+									)}
+									color="foreground"
+									href={item.href}
+								>
+									{item.label}
+								</NextLink>
+							</NavbarItem>
+
+							
+						    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
+      <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+        {item.dropdown.map((dropdownItem) => (
+          <NextLink href={dropdownItem.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+            {dropdownItem.label}
+			</NextLink>		
+		))}
+      </div>
+    </div>
+			</div>
 					))}
+					
 				</ul>
 			</NavbarContent>
 
-			<NavbarContent
-				className="hidden sm:flex basis-1/5 sm:basis-full"
-				justify="end"
-			>
+			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
 				<NavbarItem className="hidden sm:flex gap-2">
 					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
 						<TwitterIcon className="text-default-500" />
@@ -94,9 +147,7 @@ export const Navbar = () => {
 					<ThemeSwitch />
 				</NavbarItem>
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-				<NavbarItem className="hidden md:flex">
-					
-				</NavbarItem>
+				<NavbarItem className="hidden md:flex"></NavbarItem>
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
@@ -107,7 +158,7 @@ export const Navbar = () => {
 				<NavbarMenuToggle />
 			</NavbarContent>
 
-			<NavbarMenu  >
+			<NavbarMenu>
 				{searchInput}
 				<div className="mx-4 mt-2 block flex-row-reverse gap-2">
 					{siteConfig.navMenuItems.map((item, index) => (
@@ -130,6 +181,5 @@ export const Navbar = () => {
 				</div>
 			</NavbarMenu>
 		</NextUINavbar>
-		
 	);
 };
