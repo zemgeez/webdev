@@ -91,13 +91,14 @@ export const Navbar = () => {
 
 	return (
 		<NextUINavbar maxWidth="xl" position="sticky" >
-			<NavbarContent className="basis-1/5 sm:basis-full mt-10" justify="start">
+			<NavbarContent className="basis-1/3 sm:basis-full  pt-10" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="http://www.nits.ac.in/">
 						<Logo />
 						<p className="font-bold text-inherit">NIT SILCHAR</p>
 					</NextLink>
 				</NavbarBrand>
+				
 				
 				<ul className="hidden lg:flex gap-4 justify-start ml-1">
 					
@@ -136,7 +137,7 @@ export const Navbar = () => {
 				</ul>
 			</NavbarContent>
 
-			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
+			<NavbarContent className="hidden sm:flex basis-1/3 pt-5  sm:basis-full" justify="end">
 				<NavbarItem className="hidden sm:flex gap-2">
 					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
 						<TwitterIcon className="text-default-500" />
@@ -144,26 +145,23 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
 						<DiscordIcon className="text-default-500" />
 					</Link>
-					<Link isExternal href={siteConfig.links.github} aria-label="Github">
-						<GithubIcon className="text-default-500" />
-					</Link>
+					
 					<ThemeSwitch />
 				</NavbarItem>
-				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+				<br />
+				<NavbarItem className="block lg:flex  ">{searchInput}</NavbarItem>
 				<NavbarItem className="hidden md:flex"></NavbarItem>
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link>
+				
 				<ThemeSwitch />
 				<NavbarMenuToggle />
 			</NavbarContent>
 
 			<NavbarMenu>
 				{searchInput}
-				<div className="mx-4 mt-2 block flex-row-reverse gap-2">
+				<div className="mx-4 mt-4 block flex-row-reverse gap-2 ">
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
