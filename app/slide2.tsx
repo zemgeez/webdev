@@ -4,9 +4,9 @@ import { Carousel } from 'react-responsive-carousel';
 export default function Slide2() {
     return (
         
-            <div className='flex gap-0'>
+            <div className='flex gap-4'>
                     <h1 className='text-7xl font-mono px-2 '>Some Events</h1>
-                <Carousel autoPlay showThumbs={false} interval={3000} infiniteLoop className=" mt-5 w-1/2/4 p-4  rounded-br-3xl  bg-slate-200">
+                <Carousel autoPlay showThumbs={false} interval={3000} infiniteLoop className=" mt-5 w-1/4 p-4  rounded-br-3xl  bg-slate-200">
                     <div>
                         <img src="./slide2.jpeg"  alt="image1"
                             />

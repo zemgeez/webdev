@@ -34,7 +34,7 @@ export const Navbar = () => {
 			aria-label="Search"
 			classNames={{
 				inputWrapper: "bordered bg-transparent rounded-lg border-black-2",
-				input: "text-sm",
+				input: "text-lg",
 			}}
 			endContent={
 				<Kbd className="hidden lg:block" keys={["command"]}>
@@ -71,8 +71,11 @@ export const Navbar = () => {
     label: 'Academics',
     href: '/study',
     dropdown: [
-      { label: 'Dropdown 3', href: '/dropdown3' },
-      { label: 'Dropdown 4', href: '/dropdown4' },
+      { label: 'Acedmic Section', href: '/dropdown3' },
+		{ label: 'Fee Structure (UG & PG)', href: '/dropdown4' },
+		{ label: 'Acedmic Notice', href: '/dropdown4' },
+		{ label: 'Acedmic Forms', href: '/dropdown4' },
+	  { label: 'Result', href: '/dropdown4' },
     ],
 		},
     {
@@ -87,8 +90,8 @@ export const Navbar = () => {
 ];
 
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
-			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+		<NextUINavbar maxWidth="xl" position="sticky" >
+			<NavbarContent className="basis-1/5 sm:basis-full mt-10" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="http://www.nits.ac.in/">
 						<Logo />
@@ -96,7 +99,7 @@ export const Navbar = () => {
 					</NextLink>
 				</NavbarBrand>
 				
-				<ul className="hidden lg:flex gap-4 justify-start ml-2">
+				<ul className="hidden lg:flex gap-4 justify-start ml-1">
 					
 					
 

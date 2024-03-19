@@ -1,27 +1,22 @@
+'use client'
 import * as React from "react";
 import { IconSvgProps } from "@/types";
+import Image from "next/image";
 
-export const Logo: React.FC<IconSvgProps> = ({
-	size = 36,
-	width,
-	height,
-	...props
-}) => (
-	<svg
-		fill="none"
-		height={size || height}
-		viewBox="0 0 32 32"
-		width={size || width}
-		{...props}
-	>
-		<path
-			clipRule="evenodd"
-			d="M19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-			fill="currentColor"
-			fillRule="evenodd"
-		/>
-	</svg>
-);
+
+
+export const Logo: React.FC<{ size?: number }> = ({ size = 100 }) => {
+  return (
+	  <Image
+		  
+      src="/loco.svg" // replace with the path to your logo file
+      alt="Logo"
+      width={size}
+		  height={size}
+		  className="rounded-full "
+    />
+  );
+};
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
 	size = 24,

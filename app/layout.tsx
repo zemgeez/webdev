@@ -6,13 +6,14 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
 		template: `%s - ${siteConfig.name}`,
 	},
-	description: siteConfig.description,
+
 	themeColor: [
 		{ media: "(prefers-color-scheme: light)", color: "voilet" },
 		{ media: "(prefers-color-scheme: dark)", color: "black" },
@@ -41,12 +42,15 @@ export default function RootLayout({
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
-						<main className="container mx-auto max-w-8xl pt-8 px-6 flex-grow gradient-bg">
+						<main className="container mx-auto max-w-8xl pt-8 px-6 flex-grow gradient-bg ">
 							{children}
 						</main>
-						<footer className="w-full flex items-center justify-center py-3">
+						<br />
+						<footer className="w-full flex items-center justify-center py-3 ">
+						<Footer />
+
 							<Link href="https://cdac.in">
-								<span className="text-default-600">Developed By</span>
+								<span className="text-default-600">Developed By{ ''}</span>
 								<p className="text-primary">C-DAC CINE</p>
 							</Link>
 						</footer>
