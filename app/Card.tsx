@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Card, CardHeader, CardBody, Image, Divider, CardFooter } from "@nextui-org/react";
 
 import { Carousel } from 'react-responsive-carousel';
+import { px } from "framer-motion";
 
 
 export default function Tcard() {
@@ -29,7 +30,7 @@ export default function Tcard() {
 
                   <CardFooter className=" inline gap-2">
                     <h3>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo cumque cum incidunt, labore possimus corrupti obcaecati autem dolores ipsum ullam modi aliquam dolorem at, ad aliquid. Rem nobis quidem consequuntur!
+                    With a vision to train and transform young professionals into responsible citizens engaging themselves for the betterment of the society, NIT Silchar has come a long way from being a REC to brand- NITS
                     </h3>
                   </CardFooter>
                 </div>
@@ -38,24 +39,23 @@ export default function Tcard() {
           </div>
           <div className="flex flex-col justify-between h-full">
 
-            <Card className="max-w-[780px] bg-green-200 justify-center mt-4 float-right">
+            <Card className="max-w-[780px] bg-white justify-center mt-4 float-right">
               <CardHeader className="flex gap-3 justify-center">
                 <Image
                   alt="nextui logo"
-                  height={40}
+                  height={60}
                   radius="sm"
-                  src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+                  src="./vision.jpg"
                   width={40}
                 />
                 <div className="flex flex-col">
-                  <p className="text-md justify-center">Our Vision</p>
-                  <p className="text-small text-default-500 justify-center">A Global Education Institute</p>
+                  <p className="text-md justify-center text-black">Our Vision</p>
+                  <p className="text-small text-black justify-center"></p>
                 </div>
               </CardHeader>
               <Divider />
               <CardBody>
-                <p className="h-[400px] mr-5 ml-3 mt-5 bg-transparent">Make beautiful dreams Life with Us.
-                  National Institute Of Technology, Silchar (राष्ट्रीय प्रौद्योगिकी संस्थान, सिलचर) is one of the 31 National Institutes of Technology of India and was established in 1967 as a Regional Engineering College in Assam. In 2002 it was upgraded to the status of National Institute of Technology and was declared as Institute of National Importance under the National Institutes of Technology Act, 2007.
+                <p className="h-[400px] mr-5 ml-3 mt-5 bg-transparent text-black">To become an internationally acclaimed institution of higher learning that will serve as a source of knowledge and expertise for the society and be a preferred destination for undergraduate and graduate studies.
                 </p>
               </CardBody>
               <Divider />
@@ -72,18 +72,18 @@ export default function Tcard() {
               alt="nextui logo"
               height={40}
               radius="sm"
-              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+              src="./mission.jpg"
               width={40}
             />
             <div className="flex flex-col">
-              <p className="text-md justify-center">Our Vision</p>
-              <p className="text-small text-default-500 justify-center">A Global Education Institute</p>
+              <p className="text-md justify-center">Our Mission</p>
+              <p className="text-small text-default-500 justify-center text-black ">
+</p>
             </div>
           </CardHeader>
           <Divider />
           <CardBody>
-            <p className="h-[400px] mr-5 ml-3 mt-5 bg-transparent">Make beautiful dreams Life with Us.
-              National Institute Of Technology, Silchar (राष्ट्रीय प्रौद्योगिकी संस्थान, सिलचर) is one of the 31 National Institutes of Technology of India and was established in 1967 as a Regional Engineering College in Assam. In 2002 it was upgraded to the status of National Institute of Technology and was declared as Institute of National Importance under the National Institutes of Technology Act, 2007.
+            <p className="h-[400px] mr-5 ml-3 mt-5 bg-transparent text-black ">To advance and spread knowledge in the area of science and technology leading to creation of wealth and welfare of humanity.
             </p>
           </CardBody>
           <Divider />

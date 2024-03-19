@@ -6,19 +6,19 @@ export default function CardTop(){
     return(<>
 
         
-        <Card className="flex h-1/1 w-1/1  text-white  ">
-            <CardBody className="" >
+        <Card className="flex flex-col   text-white mb-0 ">
+            <CardBody className=" mb-0 " >
             <div className=" flex flex-col h-1/1 w-full bg-white md:gap-4  bg-cover bg-center ">
 
                 
             
                 <img 
-                className="h-1/1 w-1/1  "
+                className="flex h-screen w-1/1  "
                 src="./to1.jpg" alt="" 
                 
                 />  
         {/*        <h1 className="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            Sling Academy</h1>
+            Event is live</h1>
         <h2 className="absolute text-3xl text-amber-400 bottom-4 left-1/2 -translate-x-1/2">Bottom Center</h2>
 
                
@@ -31,7 +31,7 @@ export default function CardTop(){
             <div className="w-full h-full flex flex-col justify-center items-center backdrop-blur-lg">
             <h3 className="text-2xl text-orange-400">HI THERE</h3>
             <h1 className="mt-5 text-center text-4xl text-white font-semibold drop-shadow-lg">WELCOME TO
-                <span className="text-yellow-300">SLING ACADEMY</span>
+                <span className="text-yellow-300">Page is live</span>
             </h1>
         </div>
 
@@ -50,7 +50,8 @@ export default function CardTop(){
 
         */}
 
-            <div className="absolute bottom-0 left-0 right-0 top-0 px-4 py-40 bg-gray-800 opacity-90 text-center">
+            <div className="absolute bottom-0 left-0 right-0 top-0 px-4 py-40 bg-gray-800 opacity-80 text-center">
+            <div className="w-full h-full flex flex-col justify-center items-center backdrop-blur-lg">
     <h3 className="text-5xl justify-center text-white font-bold">
         Where Dreams Become Reality !
     </h3>
@@ -68,6 +69,7 @@ export default function CardTop(){
                
 
 </section>
+            </div>
 
             </CardBody>
 

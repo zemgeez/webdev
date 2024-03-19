@@ -25,7 +25,7 @@ const EventForm = () => {
   return (
     <div>
     
-    <div className="max-w-md mx-auto bg-black py-5 px-20 mx-40 ml-60 ">
+    <div className="max-w-md mx-auto bg-black py-5 px-20  ml-60 ">
       <h2 className="text-2xl font-bold mb-4">Create New Event</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

@@ -1,7 +1,7 @@
 'use client'
 import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
 import EventPage from "@/components/event";
-<<<<<<< HEAD
+
 import CardTop from "@/components/cardTp";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -11,19 +11,19 @@ export default function BlogPage() {
 	  return (
 		
 		<>
-		<div>
+		<div className="mt- ">
 			<CardTop/>
 			<br />
 
 
-			<div> 
+			<div className=" "> 
 			
 			<Carousel
 			  autoPlay
 			  showThumbs={false}
 			  interval={3000}
 			  infiniteLoop
-			  className="flex flex-col h-[250px] justify-end  "> 
+			  className="flex flex-col h-[270px] w-screen justify-end    "> 
 					<div> 
 						<img src="./eve1.png" alt="image1"/> 
 						<p className="fullscreen">Image 1</p> 
@@ -63,7 +63,7 @@ export default function BlogPage() {
 
 
 
-		   <div className=" my-80 ">
+		   <div className=" my-5 ">
 			   <EventPage/>
 			
 			
@@ -73,18 +73,8 @@ export default function BlogPage() {
 
 
 
-</>
-=======
-
-export default function BlogPage() {
-	  return (
-		<div>
-			<EventPage/>
-			<EventPage/>
-				<h1>hello</h1>
-		</div>
->>>>>>> 05a62923c50f8c18aea47f3044daa7d8b6b01531
-	  );
+  </>
+	 );
 }
 
 
