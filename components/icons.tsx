@@ -9,7 +9,7 @@ export const Logo: React.FC<{ size?: number }> = ({ size = 100 }) => {
   return (
 	  <Image
 		  
-      src="/loco.svg" // replace with the path to your logo file
+      src="/loco.png" // replace with the path to your logo file
       alt="Logo"
       width={size}
 		  height={size}
