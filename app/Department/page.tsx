@@ -6,6 +6,7 @@ import MediaC from "@/components/MediaC";
 import MCover from "@/components/MCover";
 import BasicExample from "@/components/CmOne";
 import LastDiv from "@/components/LastDiv";
+// import FlipCard from "@/components/Test1";
 
 export default function DepartmentPage(){
     return( 
@@ -29,6 +30,9 @@ export default function DepartmentPage(){
 <div>
 <MCover/>
 </div>
+
+
+{/* <div><FlipCard/></div> */}
 
 
         </div>
