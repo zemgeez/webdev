@@ -13,7 +13,30 @@ import LastDiv from '@/components/LastDiv';
 import Mission from '@/components/cardmission';
 import UpcomingEvents from '@/components/upcomingeve';
 import Vision from '@/components/cardvision';
+import { SearchIcon } from '@/components/icons';
+import { Input } from '@nextui-org/input';
+import { Kbd } from '@nextui-org/kbd';
 
+const searchInput = (
+		<Input
+			aria-label="Search"
+			classNames={{
+				inputWrapper: "bordered bg-transparent rounded-full  border-black-4 ",
+				input: "text-lg",
+			}}
+			endContent={
+				<Kbd className="hidden lg:block" keys={["command"]}>
+					K
+				</Kbd>
+			}
+			labelPlacement="outside"
+			placeholder="Search..."
+			startContent={
+				<SearchIcon className="flex text-base text-default-400 pointer-events-none flex-shrink-0" />
+			}
+			type="search"
+		/>
+	);
 
 
 export default function home() {
@@ -83,15 +106,16 @@ export default function home() {
 						<br />
 						<br />
 						<UpcomingEvents />
-						<MCover />
-						<LastDiv />
-					</div>
-
-					<div className="flex flex-col max-h-96 sm:flex-row gap-2 px-4 border py-4">
+						<div className="flex flex-col max-h-96 sm:flex-row gap-2 px-4 border py-4">
 						<Accord />
 						<Tcard />
 						<SimpleMap />
 					</div>
+						<MCover />
+						<LastDiv />
+					</div>
+
+					
 				</div>
 			</div>
 		</>
