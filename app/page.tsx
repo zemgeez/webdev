@@ -17,6 +17,7 @@ import Vision from '@/components/cardvision';
 import { SearchIcon } from '@/components/icons';
 import { Input } from '@nextui-org/input';
 import { Kbd } from '@nextui-org/kbd';
+import Cardd from '@/components/cards';
 
 const searchInput = (
 		<Input
@@ -60,19 +61,19 @@ export default function home() {
 								interval={3000}
 								infiniteLoop
 								className="flex flex-col h-3/5 justify-end mb-4 ">
-								<div>
+								<div key={1}>
 									<img src="./ft1.jpeg" alt="image1" />
 								</div>
-								<div>
+								<div key={2}>
 									<img src="./gb1.jpeg" alt="image2" />
 								</div>
-								<div>
+								<div key={3}>
 									<img src="./lb1.jpeg" alt="image3" />
 								</div>
-								<div>
+								<div key={4}>
 									<img src="./sk1.jpg" alt="image4" />
 								</div>
-								<div>
+								<div key={5}>
 									<img src="./ad1.jpeg" alt="image5" />
 								</div>
 							</Carousel>
@@ -112,7 +113,7 @@ export default function home() {
 
 					<div className="flex flex-col max-h-96 sm:flex-row gap-2 px-4 border py-4">
 						<Accord />
-						<Tcard />
+						<Cardd />
 						<SimpleMap />
 					</div>
 				</div>
