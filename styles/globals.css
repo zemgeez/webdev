@@ -5,3 +5,19 @@
 .gradient-bg {
   background: linear-gradient(to bottom, #D2E8E3, #A0CD60);
 }
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  justify-content: flex-end; /* Center horizontally */
+  align-items: flex-end; /* Center vertically */
+}
+.marquee {
+  white-space: nowrap;
+  animation: marquee 4s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateY(100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
