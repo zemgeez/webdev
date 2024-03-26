@@ -41,7 +41,7 @@ export const Navbar = () => {
   },
   {
     label: 'Department',
-    href: '/navitem2',
+    href: '/Department',
     dropdown: [
       { label: 'Dropdown 3', href: '/dropdown3' },
       { label: 'Dropdown 4', href: '/dropdown4' },

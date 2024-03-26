@@ -2,6 +2,7 @@
 import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
 
 export default function EventPage() {
+	
 	const list = [
 		{
 		  title: "Event 1",
@@ -51,21 +52,24 @@ export default function EventPage() {
 	  ];
 	
 	  return (
-		<section className="w-screen grid">
-		<div className="gap-4 grid    grid-cols-3 xl:grid-cols-3">
+		<>
+		<section className="flex-col mt-0 ">
+		<div className="grid gap-8 gap-x-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-10 ml-10   ">
 		  {list.map((item, index) => (
-			<Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
-			  <CardBody className="overflow-visible p-0">
+			<Card shadow="sm" className="h-[200px] w-[270px]" key={index} isHoverable onPress={() => console.log("item pressed")}>
+			  <CardBody className="relative overflow-visible p-0 group" >
 				<Image
 				  shadow="sm"
 				  radius="lg"
 				  width="100%"
 				  alt={item.title}
-				  className="w-full object-cover h-[240px] w-[400px]"
+				  className="w-full object-cover h-[180px] "
 				  src={item.img}
 				/>
+					
+						
 			  </CardBody>
-			  <CardFooter className="text-small justify-between">
+			  <CardFooter className="text-small text-white justify-between bg-black">
 				<b>{item.title}</b>
 				<p className="text-default-500">{item.Date}</p>
 			  </CardFooter>
@@ -73,11 +77,14 @@ export default function EventPage() {
 		  ))}
 		</div>
 		</section>
+
+
+
+		</>
+
+		
 	  );
 }
 
 
 		
-
-
-
