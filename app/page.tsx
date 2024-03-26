@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import React from "react";
 import '../styles/globals.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Tcard from "./Card";
+import Tcard from "../components/Card";
 import { TypeAnimation } from 'react-type-animation';
 import Accord from '@/components/acco';
 import Cardd from '@/components/cards';
@@ -12,18 +12,52 @@ import SimpleMap from '@/components/map';
 import Vision from '@/components/cardvision';
 import Mission from '@/components/cardmission';
 import UpcomingEvents from '@/components/upcomingeve';
-
+import { Input } from '@nextui-org/input';
+import { Kbd } from '@nextui-org/kbd';
+import { SearchIcon } from '@/components/icons';
+const searchInput = (
+		<Input
+			aria-label="Search"
+			classNames={{
+				inputWrapper: "bordered bg-transparent rounded-full  border-black-4 ",
+				input: "text-lg",
+			}}
+			endContent={
+				<Kbd className="hidden lg:block" keys={["command"]}>
+					K
+				</Kbd>
+			}
+			labelPlacement="outside"
+			placeholder="Search..."
+			startContent={
+				<SearchIcon className="flex text-base text-default-400 pointer-events-none flex-shrink-0" />
+			}
+			type="search"
+		/>
+	);
 export default function home() {
 	return (
 		<><div>	
 			<div className='grid grid-row-7  mb-0 w-full'>
-				
+			
+				<div className="relative">
+						<div className='flex flex-col w-full justify-end items-end pt-1 mb-1'>
+					<div className='text-white z-10 w-1/2 '>
+								{searchInput }
+					</div>
+					</div>
 					
-					<div className="relative">
-							<img src="./map.jpeg" alt="Background" className="absolute w-full h-full" />
+
+					<img src="./map.jpeg" alt="Background" className="absolute w-full h-full" />
+					
+							
 							<div className="absolute top-0 left-0 w-full h-1/2 flex items-start justify-start">
-								<div className="text-7xl text-white font-light pt-10 z-10 transition-all duration-2000">
-									<p>Welcome to<br/> NIT SILCHAR</p>
+								<div className="text-7xl text-white font-light pt-10 z-10 ">
+							<p>Welcome to<br /> NIT SILCHAR</p>
+						
+						
+						
+							
 								</div>
 							</div>
 					</div>
@@ -90,7 +124,7 @@ export default function home() {
 			
 				
 				
-					<div className="flex flex-col sm:flex-row gap-2">
+					<div className="flex flex-col max-h-96 sm:flex-row gap-2 px-4 border py-4">
 				<Accord />
 				<Cardd />
 				<SimpleMap />

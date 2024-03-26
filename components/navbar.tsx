@@ -29,26 +29,7 @@ import {
 import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
-	const searchInput = (
-		<Input
-			aria-label="Search"
-			classNames={{
-				inputWrapper: "bordered bg-transparent rounded-lg border-black-2",
-				input: "text-lg",
-			}}
-			endContent={
-				<Kbd className="hidden lg:block" keys={["command"]}>
-					K
-				</Kbd>
-			}
-			labelPlacement="outside"
-			placeholder="Search..."
-			startContent={
-				<SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
-			}
-			type="search"
-		/>
-	);
+	
 	const navItems = [
   {
     label: 'Home',
@@ -149,7 +130,7 @@ export const Navbar = () => {
 					<ThemeSwitch />
 				</NavbarItem>
 				<br />
-				<NavbarItem className="block lg:flex  ">{searchInput}</NavbarItem>
+				<NavbarItem className="block lg:flex  "></NavbarItem>
 				<NavbarItem className="hidden md:flex"></NavbarItem>
 			</NavbarContent>
 
@@ -158,29 +139,8 @@ export const Navbar = () => {
 				<ThemeSwitch />
 				<NavbarMenuToggle />
 			</NavbarContent>
-
-			<NavbarMenu>
-				{searchInput}
-				<div className="mx-4 mt-4 block flex-row-reverse gap-2 ">
-					{siteConfig.navMenuItems.map((item, index) => (
-						<NavbarMenuItem key={`${item}-${index}`}>
-							<Link
-								color={
-									index === 2
-										? "primary"
-										: index === siteConfig.navMenuItems.length - 1
-										? "danger"
-										: "foreground"
-								}
-								href="#"
-								size="lg"
-							>
-								{item.label}
-							</Link>
-						</NavbarMenuItem>
-					))}
-				</div>
-			</NavbarMenu>
+<br />
+			
 		</NextUINavbar>
 	);
 };

@@ -35,15 +35,17 @@ export default function RootLayout({
 			<head />
 			<body
 				className={clsx(
-					"min-h-screen  font-sans antialiased gradient-bg",
+					"min-h-screen  font-sans antialiased bg-white",
 					fontSans.variable
 				)}
 			>
 				
+				
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className=" flex flex-col h-full justify-end">
 						<Navbar />
-						<main className="container mx-auto max-w-8xl pt-0 px-6 flex-grow gradient-bg ">
+						
+						<main className="container mx-auto max-w-8xl pt-0 px-6 flex-grow bg-white ">
 							{children}
 						</main>
 				

@@ -1,9 +1,10 @@
 import { Accordion, AccordionItem } from "@nextui-org/react"
 export default function Accord() {
         const defaultContent ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "
-    return (
+    return (<>
         
-        <Accordion variant="shadow" className="text-md  w-full px-3 py-5 h-full max-h-80 overflow-y-auto ">
+        
+        <Accordion variant="shadow" className="text-md  w-full px-3 py-5 h-full max-h-96 overflow-y-auto bg-transparent">
             <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1 ">
                 {defaultContent}
             </AccordionItem>
@@ -31,8 +32,18 @@ export default function Accord() {
             <AccordionItem key="9" aria-label="Accordion 9" title="Accordion 9">
                 {defaultContent}
             </AccordionItem>
+             <AccordionItem key="10" aria-label="Accordion 10" title="Accordion 10">
+                {defaultContent}
+            </AccordionItem>
+            <AccordionItem key="11" aria-label="Accordion 11" title="Accordion 11">
+                {defaultContent}
+            </AccordionItem>
+            <AccordionItem key="12" aria-label="Accordion 12" title="Accordion 12">
+                {defaultContent}
+            </AccordionItem>
               
                
         </Accordion>
+        </>
     );
 }
