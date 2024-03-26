@@ -6,14 +6,14 @@ export default function CardTop(){
     return(<>
 
         
-        <Card className="flex flex-col   text-white mb-0 ">
-            <CardBody className=" mb-0 " >
+        <Card className="flex flex-col   text-white  ">
+            <CardBody className="  " >
             <div className=" flex flex-col h-1/1 w-full bg-white md:gap-4  bg-cover bg-center ">
 
                 
             
                 <img 
-                className="flex h-screen w-1/1  "
+                className="flex h-3/5 w-1/1  "
                 src="./to1.jpg" alt="" 
                 
                 />  

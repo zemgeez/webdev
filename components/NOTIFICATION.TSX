@@ -67,6 +67,15 @@ export default function Noti() {
                   <Image
         				className="h-full px-1 mt-1 hover:scale-105 transition duration-500 ease-in-out rounded-xl "
                             src="./img (1).jpeg" alt="your image"  />
+
+                            <h1 className="text-white">hi</h1>
+
+
+
+<div className="absolute bottom-0 left-0 right-0 top-0 px-4 py-40 bg-gray-800 opacity-80 text-center">
+            <div className="w-full h-full flex flex-col justify-center items-center backdrop-blur-lg">
+                  </div>
+                  </div>
                        
                     
                 </CardBody>

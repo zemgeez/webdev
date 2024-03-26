@@ -5,48 +5,48 @@ import EventPage from "@/components/event";
 import CardTop from "@/components/cardTp";
 import { Carousel } from 'react-responsive-carousel';
 
-import EventForm from "@/components/EventForm";
+{/* import EventForm from "@/components/EventForm";  */}
 
 export default function BlogPage() {
 	  return (
 		
 		<>
-		<div className="mt- ">
+		<div>
 			<CardTop/>
 			<br />
 
 
-			<div className=" "> 
 			
+			<div >
 			<Carousel
 			  autoPlay
 			  showThumbs={false}
 			  interval={3000}
 			  infiniteLoop
-			  className="flex flex-col h-[270px] w-screen justify-end    "> 
+			 > 
 					<div> 
-						<img src="./eve1.png" alt="image1"/> 
-						<p className="fullscreen">Image 1</p> 
+						<img  src="http://localhost:3000/eve1.png" alt="image1"/> 
+						<p className="">Image 1</p> 
 	
 					</div> 
 					<div> 
-						<img src="./eve3.png" alt="image2" /> 
-						<p className="fullscreen">Image 2</p> 
+						<img  src="http://localhost:3000/eve3.png" alt="image2" /> 
+						<p className="">Image 2</p> 
 	
 					</div> 
 					<div> 
-						<img src="./eve4.png" alt="image3"/> 
-						<p className="fullscreen">Image 3</p> 
+						<img  src="http://localhost:3000/eve4.png" alt="image3"/> 
+						<p className="">Image 3</p> 
 	
 					</div> 
 					<div> 
-						<img src="./eve7.png" alt="image4"/> 
-						<p className="fullscreen">Image 4</p> 
+						<img  src="http://localhost:3000/eve7.png" alt="image4"/> 
+						<p className="">Image 4</p> 
 	
 					</div> 
 					<div> 
-						<img src="./eve8.png" alt="image5"/> 
-						<p className="fullscreen">Image 5</p> 
+						<img  src="http://localhost:3000/eve8.png" alt="image5"/> 
+						<p className="">Image 5</p> 
 	
 					</div> 
 				</Carousel> 

@@ -6,6 +6,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Tcard from "./Card";
 import Noti from "../components/NOTIFICATION";
 import { TypeAnimation } from 'react-type-animation';
+import MCover from '@/components/MCover';
+import LastDiv from '@/components/LastDiv';
 
 export default function home() {
 
@@ -20,7 +22,7 @@ export default function home() {
 				showThumbs={false}
 				interval={3000}
 				infiniteLoop
-				className="flex flex-col h-screen justify-end mb-4 ">
+				className="flex flex-col h-3/5 justify-end mb-4 ">
 
 				<div key="image1">
 					<img src="./ft1.jpeg" alt="image1" />
@@ -71,6 +73,11 @@ export default function home() {
 				
 					
 					<Noti />
+
+					<MCover/>
+
+
+					<LastDiv/>
 				</div>
 				
 				</div>

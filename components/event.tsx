@@ -54,7 +54,7 @@ export default function EventPage() {
 	  return (
 		<>
 		<section className="flex-col mt-0 ">
-		<div className="gap-8 grid  grid-cols-3 xl:grid-cols-10 ml-10   ">
+		<div className="grid gap-8 gap-x-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-10 ml-10   ">
 		  {list.map((item, index) => (
 			<Card shadow="sm" className="h-[200px] w-[270px]" key={index} isHoverable onPress={() => console.log("item pressed")}>
 			  <CardBody className="relative overflow-visible p-0 group" >
@@ -69,7 +69,7 @@ export default function EventPage() {
 					
 						
 			  </CardBody>
-			  <CardFooter className="text-small justify-between ">
+			  <CardFooter className="text-small text-white justify-between bg-black">
 				<b>{item.title}</b>
 				<p className="text-default-500">{item.Date}</p>
 			  </CardFooter>

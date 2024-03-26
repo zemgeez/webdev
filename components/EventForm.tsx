@@ -1,3 +1,4 @@
+{/*
 interface Event {
   title: string;
   description: string;
@@ -49,3 +50,6 @@ const EventForm = () => {
 };
 
 export default EventForm;
+
+
+*/}

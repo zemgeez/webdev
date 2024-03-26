@@ -76,8 +76,8 @@ export default function Tcard() {
               width={40}
             />
             <div className="flex flex-col">
-              <p className="text-md justify-center">Our Mission</p>
-              <p className="text-small text-default-500 justify-center text-black ">
+              <p className="text-md justify-center text-black">Our Mission</p>
+              <p className="text-small text-default-500 justify-center  ">
 </p>
             </div>
           </CardHeader>
