@@ -107,15 +107,16 @@ export default function home() {
 						<br />
 						<br />
 						<UpcomingEvents />
-						<MCover />
-						<LastDiv />
-					</div>
-
-					<div className="flex flex-col max-h-96 sm:flex-row gap-2 px-4 border py-4">
+						<div className="flex flex-col max-h-96 sm:flex-row gap-2 px-4 border py-4">
 						<Accord />
 						<Tcard />
 						<SimpleMap />
 					</div>
+						<MCover />
+						<LastDiv />
+					</div>
+
+					
 				</div>
 			</div>
 		</>
