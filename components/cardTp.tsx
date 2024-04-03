@@ -6,7 +6,7 @@ export default function CardTop(){
     return(<>
 
         
-        <Card className="flex flex-col   text-white  ">
+        <Card className="flex flex-col   text-white mx-6 ">
             <CardBody className="  " >
             <div className=" flex flex-col h-1/1 w-full bg-white md:gap-4  bg-cover bg-center ">
 

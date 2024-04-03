@@ -53,23 +53,32 @@ export default function EventPage() {
 	
 	  return (
 		<>
-		<section className="flex-col mt-0 ">
-		<div className="grid gap-8 gap-x-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-10 ml-10   ">
+		<div className=" bg-blue-200 py-20 mx-6 ">
+		<div className=" bg-blue-900  mb-5 mt-0 mx-6 w-6/7 px-6 py-2 "><h1 className=" font-bold text-xl py-3 text-white ">Events </h1></div>
+
+		<section className="flex-col mt-20 mx-20 bg-blue-200 ">
+		<div className="grid gap-8 gap-x-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3   py-4 ml-10   ">
 		  {list.map((item, index) => (
 			<Card shadow="sm" className="h-[200px] w-[270px]" key={index} isHoverable onPress={() => console.log("item pressed")}>
 			  <CardBody className="relative overflow-visible p-0 group" >
-				<Image
-				  shadow="sm"
-				  radius="lg"
-				  width="100%"
-				  alt={item.title}
-				  className="w-full object-cover h-[180px] "
-				  src={item.img}
-				/>
+				<div>
+					<Image
+						shadow="sm"
+						radius="lg"
+						width="100%"
+						alt={item.title}
+						className="w-full object-cover h-[180px]   transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+						src={item.img}
+					/>
+					<div className="absolute h-full w-full  bg-black/80  -bottom-30 group-hover:bottom-0 opacity-0 group-hover:opacity-100 backdrop-blur-lg  transition-all duration-300" >
+						<h1 className="  text-xl font-semibold pt-8 mx-16 text-amber-600">About event</h1>
+						<p className=" text-sm mt-2 mx-6   text-white/25">The event is all about the photography.All the artist have thier own art form woth unique style.</p>
+            		</div>
+				</div>
 					
 						
 			  </CardBody>
-			  <CardFooter className="text-small text-white justify-between bg-black">
+			  <CardFooter className="text-small py-2 text-white/60 justify-between bg-black">
 				<b>{item.title}</b>
 				<p className="text-default-500">{item.Date}</p>
 			  </CardFooter>
@@ -77,6 +86,7 @@ export default function EventPage() {
 		  ))}
 		</div>
 		</section>
+		</div>	
 
 
 

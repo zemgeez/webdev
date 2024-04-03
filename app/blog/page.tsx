@@ -15,9 +15,11 @@ export default function BlogPage() {
 			<CardTop/>
 			<br />
 
+			<EventPage/>
+
 
 			
-			<div >
+			{/* <div >
 			<Carousel
 			  autoPlay
 			  showThumbs={false}
@@ -49,8 +51,8 @@ export default function BlogPage() {
 						<p className="">Image 5</p> 
 	
 					</div> 
-				</Carousel> 
-		  </div>
+				</Carousel>  */}
+		  {/* </div> */}
 
 
 
@@ -63,11 +65,11 @@ export default function BlogPage() {
 
 
 
-		   <div className=" my-5 ">
-			   <EventPage/>
+		   
+			   
 			
 			
-			</div>	
+		
 
 		</div>
 
