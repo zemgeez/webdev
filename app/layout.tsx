@@ -7,6 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Footer from "@/components/footer";
+import { NavigationMenuDemo } from "@/components/Nav2";
 
 export const metadata: Metadata = {
 	title: {
@@ -42,8 +43,9 @@ export default function RootLayout({
 				
 				
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					<div className="relative flex flex-col h-full">
-						<Navbar />
+					<div className=" flex flex-col h-full justify-end">
+						
+						<Navbar/>
 						
 						<main className="container mx-auto max-w-8xl pt-0 px-6 flex-grow bg-white ">
 							{children}

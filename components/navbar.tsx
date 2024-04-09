@@ -1,3 +1,4 @@
+
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -10,7 +11,7 @@ import {
 import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
+
 
 import { link as linkStyles } from "@nextui-org/theme";
 
@@ -76,7 +77,7 @@ export const Navbar = () => {
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="http://www.nits.ac.in/">
 						<Logo />
-						<p className="font-bold text-inherit">NIT SILCHAR</p>
+						<p className="font-medium text-2xl">NIT SILCHAR</p>
 					</NextLink>
 				</NavbarBrand>
 				

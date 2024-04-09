@@ -23,7 +23,7 @@ export default function LastDiv (){
             width="100%"
           />
           </div>
-            <div className=" bg-white mt-10 h-fit "><img className=" h-45 mb-20" src="./dr1.jpeg" alt="" /></div>
+            <div className=" bg-white mt-10 h-fit "><img className=" h-full mb-20" src="./dr1.jpeg" alt="" /></div>
             
             
         </div>
