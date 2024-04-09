@@ -21,33 +21,26 @@ export default function Noti() {
            
             
               <Accordion variant="shadow" className="text-md px-3 py-5 h-full max-h-80 overflow-y-auto ">
-      <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1 ">
+      <AccordionItem key="1" aria-label="Notice" title="Notification  ">
         {defaultContent}
       </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
+      <AccordionItem key="2" aria-label="Notice 1" title="Notification">
         {defaultContent}
       </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
+      <AccordionItem key="3" aria-label="Notice 2" title="Notification">
         {defaultContent}
               </AccordionItem>
-              <AccordionItem key="4" aria-label="Accordion 4" title="Accordion 4">
+              <AccordionItem key="4" aria-label="Notice 3" title="Notification">
         {defaultContent}
               </AccordionItem>
-              <AccordionItem key="5" aria-label="Accordion 5" title="Accordion 5">
+              <AccordionItem key="5" aria-label="Notice 4" title="Notification">
         {defaultContent}
               </AccordionItem>
-              <AccordionItem key="6" aria-label="Accordion 6" title="Accordion 6">
+              <AccordionItem key="6" aria-label="Notice 5" title="Notification">
         {defaultContent}
               </AccordionItem>
-              <AccordionItem key="7" aria-label="Accordion 7" title="Accordion 7">
-        {defaultContent}
-              </AccordionItem>
-              <AccordionItem key="8" aria-label="Accordion 8" title="Accordion 8">
-        {defaultContent}
-              </AccordionItem>
-              <AccordionItem key="9" aria-label="Accordion 9" title="Accordion 9">
-        {defaultContent}
-              </AccordionItem>
+        
+            
               
                
     </Accordion>
