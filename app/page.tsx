@@ -54,13 +54,17 @@ export default function home() {
 					</div>
 
 					<div className='grid grid-row-4'>
-						<div>
+						<section className='bg-blue-600' >
+							
+						<div className=' bg-transparent'>
+							
 							<Carousel
 								autoPlay
 								showThumbs={false}
 								interval={3000}
 								infiniteLoop
 								className="flex flex-col h-3/5 justify-end mb-4 ">
+									
 								<div>
 									<img src="./ft1.jpeg" alt="image1" />
 								</div>
@@ -77,7 +81,9 @@ export default function home() {
 									<img src="./ad1.jpeg" alt="image5" />
 								</div>
 							</Carousel>
+							<h1>NIT Silchar</h1>
 						</div>
+						</section>
 						<br />
 						<div>
 							<Tcard />
