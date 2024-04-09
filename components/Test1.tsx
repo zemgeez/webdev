@@ -70,14 +70,14 @@ var imgSorces = ['./eve7.png', './eve2.png', './eve3.png']
 var num = [1,2,3,4];
 // var kuch = num.map((Xs) => Xs * 2 );
 
-const users = [
-    { name: 'John', age: 25 },
-    { name: 'Mary', age: 30 },
-    { name: 'Jane', age: 20 },
-    { name: 'Bob', age: 35 },
-  ];
+// const users = [
+//     { name: 'John', age: 25 },
+//     { name: 'Mary', age: 30 },
+//     { name: 'Jane', age: 20 },
+//     { name: 'Bob', age: 35 },
+//   ];
 
-  var mi = [5,10,15,20,25];
+//   var mi = [5,10,15,20,25];
   
 
 
@@ -90,13 +90,13 @@ export default function NewC() {
 
     
 
-    const [filteredUsers, setFilteredUsers] = useState(users);
+    // const [filteredUsers, setFilteredUsers] = useState(users);
 
-    const handleFilter = (event) => {
-        const value = event.target.value;
-        const filtered = users.filter(user => user.name.includes(value));
-        setFilteredUsers(filtered);
-      };
+    // const handleFilter = (event) => {
+    //     const value = event.target.value;
+    //     const filtered = users.filter(user => user.name.includes(value));
+    //     setFilteredUsers(filtered);
+    //   };
 
 
 
@@ -107,9 +107,11 @@ export default function NewC() {
         {
             pimages.map(x => {
                 return (
-                    <div className="bg-black py-2 grid grid-rows-2 auto-cols-auto">
+                    <div className='bg-blue-400'>
+                    <div className="bg-black w-1/2 grid grid-cols-3 gap-4">
                       <img className="h-[50px]" src={x.src} alt={x.name} />
-                      <hr className="w-full border-t border-gray-500 mt-2" />
+                      {/* <hr className="w-full border-t border-gray-500 mt-2" /> */}
+                    </div>
                     </div>
                   );
                   
@@ -117,14 +119,14 @@ export default function NewC() {
             })
         }
 
-{
+{/* {
     mi.filter(currE => currE > 10 {
         return 
-    } )
-}
+    } ) */}
+{/* } */}
 
 
-        {
+        {/* {
             users.map(x => {
             return (
                 <div>
@@ -138,7 +140,7 @@ export default function NewC() {
                 </div>
               );
             })
-        }
+        } */}
 
 
 
