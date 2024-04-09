@@ -42,7 +42,7 @@ const searchInput = (
 
 export default function home() {
 	return (
-		<>
+		
 			<div>
 				<div className='grid grid-row-7  mb-0 w-full'>
 					<div className="relative">
@@ -118,7 +118,7 @@ export default function home() {
 					</div>
 				</div>
 			</div>
-		</>
+		
 	);
 		
 }
