@@ -11,14 +11,13 @@ import { TypeAnimation } from 'react-type-animation';
 import MCover from '@/components/MCover';
 import LastDiv from '@/components/LastDiv';
 import Mission from '@/components/cardmission';
-import UpcomingEvents from '@/components/upcomingeve';
 import Vision from '@/components/cardvision';
-
-import { SearchIcon } from '@/components/icons';
+import Cardd from '@/components/cards';
+import UpcomingEvents from '@/components/upcomingeve';
 import { Input } from '@nextui-org/input';
 import { Kbd } from '@nextui-org/kbd';
-import Cardd from '@/components/cards';
-
+import { SearchIcon } from '@/components/icons';
+import { NavigationMenuDemo } from '@/components/Nav2';
 const searchInput = (
 		<Input
 			aria-label="Search"
@@ -42,16 +41,39 @@ const searchInput = (
 
 export default function home() {
 	return (
-		<>
-			<div>
-				<div className='grid grid-row-7  mb-0 w-full'>
-					<div className="relative">
-						<div className='flex flex-col w-full justify-end items-end pt-1 mb-1'>
-							<div className='text-white z-10 w-1/2 '>
-								{searchInput}
-							</div>
+	<div>	
+			<div className='grid grid-row-7  mb-0 w-full'>
+			
+			
+					
+					
+
+				
+					
+							
+							<div className=" flex absolute top-28 left-0 w-full h-1/2  pl-24 items-start justify-start">
+								<div className="text-5xl  text-white to-slate-500 font-light  z-10 ">
+							NATIONAL INSTITUTE OF TECHNOLOGY
+							<p className='items-start justify-start text-xl font-medium from-current to-green-300  text-white mb-10'>An Institute Of National Importence</p>
 						</div>
+						
 					</div>
+					<br />
+						
+							<div className=' absolute top-22 pt-5 w-full h-1/2 flex items-center justify-center bg-white'>
+							
+									
+									<NavigationMenuDemo/>
+								</div>
+						
+						
+							
+								
+					
+    
+					
+		
+						
 
 					<div className='grid grid-row-4'>
 						<div>
@@ -118,7 +140,6 @@ export default function home() {
 					</div>
 				</div>
 			</div>
-		</>
 	);
 		
 }
