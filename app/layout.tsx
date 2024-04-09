@@ -52,10 +52,7 @@ export default function RootLayout({
 						<footer className="w-full flex items-center justify-center py-3 ">
 						<Footer />
 
-							<Link href="https://cdac.in">
-								<span className="text-default-600">Developed By{ ''}</span>
-								<p className="text-primary">C-DAC CINE</p>
-							</Link>
+						
 						</footer>
 					</div>
 				</Providers>

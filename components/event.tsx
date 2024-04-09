@@ -53,11 +53,11 @@ export default function EventPage() {
 	
 	  return (
 		<>
-		<div className=" bg-blue-200 py-20 mx-6 ">
-		<div className=" bg-blue-900  mb-5 mt-0 mx-6 w-6/7 px-6 py-2 "><h1 className=" font-bold text-xl py-3 text-white ">Events </h1></div>
+		<div className=" container max-w  bg-blue-200 py-20 mx-0 ">
+		<div className=" max-w bg-blue-900  mb-5 mt-0 mx-6 w-6/7 px-6 py-2 "><h1 className=" font-bold text-xl py-3 text-white ">Events </h1></div>
 
-		<section className="flex-col mt-20 mx-20 bg-blue-200 ">
-		<div className="grid gap-8 gap-x-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3   py-4 ml-10   ">
+		<section className="flex-col mt-20 mx-20 bg-blue-900 ">
+		<div className="flex-col mt-20 mx-20  max-w grid  gap-y-4 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-x-60 xl:grid-cols-3   ">
 		  {list.map((item, index) => (
 			<Card shadow="sm" className="h-[200px] w-[270px]" key={index} isHoverable onPress={() => console.log("item pressed")}>
 			  <CardBody className="relative overflow-visible p-0 group" >

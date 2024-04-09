@@ -3,6 +3,7 @@ import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
 import EventPage from "@/components/event";
 
 import CardTop from "@/components/cardTp";
+import NewC from "@/components/Test1";
 import { Carousel } from 'react-responsive-carousel';
 
 {/* import EventForm from "@/components/EventForm";  */}
@@ -14,8 +15,11 @@ export default function BlogPage() {
 		<div>
 			<CardTop/>
 			<br />
+{/* 
+			<EventPage/> */}
+			<br />
 
-			<EventPage/>
+			<NewC/>
 
 
 			

@@ -1,7 +1,13 @@
 
+import Link from "next/link"
 export default function Footer() {
 return(
-    <div className="flex px-5 ">
+    <>
+    <div className="  bg-black  ">
+
+        
+        <div className="flex px-28 py-16 text-white/60  ">
+        <div className="bg-white w-24 h-24 mt-10 ml-0 "><img src="./loco.png" alt="" /></div>
         <ul><li>Useful Links</li>
              
             <li>Audit Reorts and balance sheet</li>
@@ -59,9 +65,21 @@ return(
             </div>
         </div>
   
+
+
+        {/* <div className="  ">
+            <Link href="https://cdac.in">
+                <span className="text-default-600  ">Developed By{ ''}</span>
+                <p className="text-primary">C-DAC CINE</p>
+            </Link>
+        </div> */}
+        </div>
+  
     </div>
 
 
+
+</>
 
 )
 }
