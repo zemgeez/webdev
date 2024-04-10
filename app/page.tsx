@@ -19,6 +19,10 @@ import { Input } from '@nextui-org/input';
 import { Kbd } from '@nextui-org/kbd';
 import { SearchIcon } from '@/components/icons';
 import { NavigationMenuDemo } from '@/components/Nav2';
+
+import ViMi from '@/components/VisionM';  
+// imported by shubham
+
 const searchInput = (
 		<Input
 			aria-label="Search"
@@ -79,7 +83,7 @@ export default function home() {
 					<div className='grid grid-row-4'>
 						<section className='bg-blue-600' >
 							
-						<div className=' bg-transparent'>
+						
 							
 							<Carousel
 								autoPlay
@@ -103,9 +107,12 @@ export default function home() {
 									<img src="./ad1.jpeg" alt="image5" />
 								</div>
 							</Carousel>
-							<h1>NIT Silchar</h1>
-						</div>
+							
 						</section>
+
+						<ViMi />
+
+						
 						<br />
 						<div>
 							<Tcard />

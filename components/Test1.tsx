@@ -35,7 +35,7 @@ var pimages = [
     },
     {
         "name": "test1",
-        "src": "./eve7.png"
+        "src": "./eve1.png"
     },    
     {
         "name": "test1",
@@ -44,6 +44,10 @@ var pimages = [
     {
         "name": "test1",
         "src": "./eve2.png"
+    },
+    {
+        "name": "test1",
+        "src": "./eve3.png"
     },
     {
         "name": "test1",
@@ -104,12 +108,13 @@ export default function NewC() {
 
     return(
         <>
+        <div className='  grid grid-rows-3 grid-flow-col'>
         {
             pimages.map(x => {
                 return (
-                    <div className='bg-blue-400'>
-                    <div className="bg-black w-1/2 grid grid-cols-3 gap-4">
-                      <img className="h-[50px]" src={x.src} alt={x.name} />
+                    <div className='bg-blue-400 py-10 px-10  '>
+                    <div className="">
+                      <img className="h-22" src={x.src} alt={x.name} />
                       {/* <hr className="w-full border-t border-gray-500 mt-2" /> */}
                     </div>
                     </div>
@@ -118,6 +123,8 @@ export default function NewC() {
 
             })
         }
+        </div>
+        
 
 {/* {
     mi.filter(currE => currE > 10 {
@@ -162,9 +169,9 @@ export default function NewC() {
             <div className="bg-black py-5  text-center sm:col-start-2 md:col-start-3 lg:col-start-3 "><img src="./eve1.png" alt="" /></div>
             <div className="bg-black py-5  text-center sm:col-start-3 md:col-start-4 lg:col-start-4"><img src="./eve3.png" alt="" /></div> */}
             
-            <div className="max-w-[1891px] bg-black/25 max-auto py-10 grid grid-rows-2 grid-flow-col  gap-6 ">
+            {/* <div className="max-w-[1891px] bg-black/25 max-auto py-10 grid grid-rows-2 grid-flow-col  gap-6 ">
     
-            {/* <div className="bg-black py-5   text-center font-medium tracking-widest sm: col-start-1 col-end-7  text-white  ">E V E N T's</div> */}
+            <div className="bg-black py-5   text-center font-medium tracking-widest sm: col-start-1 col-end-7  text-white  ">E V E N T's</div>
             <div className="bg-black py-5  text-center "><img src="./eve7.png" alt="" /></div>
             <div className="bg-black py-5  text-center  "><img src="./eve2.png" alt="" /></div>
             <div className="bg-black py-5  text-center   "><img src="./eve5.png" alt="" /></div>
@@ -173,7 +180,7 @@ export default function NewC() {
             <div className="bg-black py-5  text-center "><img src="./eve3.png" alt="" /></div>
             
     
-        </div>
+        </div> */}
         </>
     );
 }

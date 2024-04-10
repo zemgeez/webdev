@@ -19,7 +19,7 @@ export default function LastDiv (){
             <div className=" bg-blue-900 mt-10 h-fit "> <ReactPlayer
             url="https://www.youtube.com/watch?v=n9EN69iWps4&ab_channel=DRONEPHOTOGRAPHY%2CSILCHAR"
             controls={true}
-            playing={true}
+            playing={false}
             width="100%"
           />
           </div>
