@@ -1,7 +1,7 @@
 
 export default function Footer() {
 return(
-    <div className="flex px-5 ">
+    <div className="flex px-5 text-sm p-3 font-light  pt-20 ">
         <ul><li>Useful Links</li>
              
             <li>Audit Reorts and balance sheet</li>

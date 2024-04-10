@@ -1,3 +1,4 @@
+
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
@@ -8,6 +9,7 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Footer from "@/components/footer";
 import { NavigationMenuDemo } from "@/components/Nav2";
+import Ani from "@/components/Ani";
 
 export const metadata: Metadata = {
 	title: {
@@ -42,25 +44,24 @@ export default function RootLayout({
 			>
 				
 				
-				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					<div className=" flex flex-col h-full justify-end">
-						
-						<Navbar/>
-						
-						<main className="container mx-auto max-w-8xl pt-0 px-6 flex-grow bg-white ">
-							{children}
-						</main>
-				
-						<footer className="w-full flex items-center justify-center py-3 ">
-						<Footer />
+				<div className="flex flex-col min-h-screen">
+    <p className="flex w-full z-10 relative top-5 justify-start items-center text-white font-light text-5xl px-4">NATIONAL INSTITUTE OF TECHNOLOGY</p>
+    <p className='flex w-full z-10 relative top-10 justify-start items-center text-white font-light text-xl px-4'>An Institute Of National Importence</p>
+    <div className="flex w-full z-10 relative top-20 justify-center items-center">
+        <NavigationMenuDemo />
+    </div>
 
-							<Link href="https://cdac.in">
-								<span className="text-default-600">Developed By{ ''}</span>
-								<p className="text-primary">C-DAC CINE</p>
-							</Link>
-						</footer>
-					</div>
-				</Providers>
+    <main className="container mx-auto pt-0 px-1 flex-grow">
+        {children}
+    </main>
+
+   
+</div>
+				
+
+   
+
+				
 				
 			</body>
 		</html>
