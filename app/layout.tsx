@@ -45,7 +45,8 @@ export default function RootLayout({
 				
 				
 				<div className="flex flex-col min-h-screen">
-    <p className="flex w-full z-10 relative top-5 justify-start items-center text-white font-light text-5xl px-4">NATIONAL INSTITUTE OF TECHNOLOGY</p>
+					<p className="flex w-full z-10 relative top-5 justify-start items-center text-white font-light text-5xl px-4">NATIONAL INSTITUTE OF TECHNOLOGY</p>
+
     <p className='flex w-full z-10 relative top-10 justify-start items-center text-white font-light text-xl px-4'>An Institute Of National Importence</p>
     <div className="flex w-full z-10 relative top-20 justify-center items-center">
         <NavigationMenuDemo />
