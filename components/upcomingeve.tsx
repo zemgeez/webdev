@@ -28,7 +28,7 @@ export default function UpcomingEvents() {
       <div className="w-full px-4">
        
         <div className="grid grid-rows-2">
-          <div className="text-white text-center mt-12 text-3xl h-1/3 bg-slate-400 rounded-lg">Seminar</div>
+          <div className="text-white text-center mt-auto text-3xl h-1/3 bg-slate-400 rounded-lg">Seminar</div>
           <Carousel autoPlay showThumbs={false} interval={3000} infiniteLoop  axis="vertical" className=" mt-1 h-full w-full py-1 px-1 rounded-3xl  shrink-0 ">
           <div className="text-sm text-white overflow-y-auto px-4 rounded-lg max-h-40 scrollbar-hide justify-items-center justify-center bg-green-400">
             <p>Department of Computer Science and Engineering</p>

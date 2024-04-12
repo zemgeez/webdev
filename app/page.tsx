@@ -9,15 +9,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Tcard from "../components/Card";
 
 import MCover from '@/components/MCover';
-import LastDiv from '@/components/LastDiv';
+import Vc from '@/components/vc';
 import Mission from '@/components/cardmission';
 import Vision from '@/components/cardvision';
 import Cardd from '@/components/cards';
 import UpcomingEvents from '@/components/upcomingeve';
 import { NavigationMenuDemo } from '@/components/Nav2';
 import Footer from '@/components/footer';
-
-
+import Ani from '@/components/Ani';
+import Noti from '@/components/Notification'
+import MediaC from '@/components/MediaC';
+import { Last } from 'react-bootstrap/esm/PageItem';
 export default function home() {
 	return (<>
 		<main className="container mx-auto pt-0 px-1 flex-grow  justify-center items-center">
@@ -32,6 +34,11 @@ export default function home() {
 				<br />
 				<Tcard />
 				<Vision />
+				<UpcomingEvents />
+				<Noti />
+				<MCover />
+				<Vc />
+		
 				
 				<Footer/>
 				

@@ -19,7 +19,7 @@ import next from "next"
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Welcome to NIT",
-    href: "/home/gallery",
+    href: "/gallery",
     description:
       "Welcome to the National Institute of Technology, Kurukshetra.",
   },
@@ -31,24 +31,24 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Ranking and Recognition",
-    href: "/home/ranking",
+    href: "/ranking",
     description:
       "NIRF Ranking and other recognition of the National Institute of Technology",
   },
   {
     title: "Campus Map",
-    href: "/home/map",
+    href: "/map",
     description: "Visually explore the Campus of the University.",
   },
   {
     title: "Former Directors",
-    href: "/home/directors",
+    href: "/directors",
     description:
       "The list of Former Directors of the National Institute of Technology, Kurukshetra.",
   },
   {
     title: "Campus and Faculity",
-    href: "/home/campus",
+    href: "/campus",
     description:
       " The Campus and Faculity of the National Institute of Technology, Kurukshetra.",
   },
