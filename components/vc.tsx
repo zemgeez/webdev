@@ -23,7 +23,7 @@ export default function vc (){
           />
         </div>
         <div className="bg-white mt-10 h-fit">
-          <img className="h-full mb-20" src="./dr1.jpeg" alt="" />
+          <img className="h-full mb-20 hover: shadow-lg" src="./dr1.jpeg" alt="" />
         </div>
       </div>
     </div>
