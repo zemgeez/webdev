@@ -68,13 +68,9 @@ export default class LastDiv extends Component {
               width="100%"
             />
           </div>
-          <div className="bg-white mt-10 ">
-            <img
-              className="h-2/3 mb-20 bg-pink-50 ml-14"
-              src="./dr1.jpeg"
-              alt=""
-            />
-          </div>
+            <div className=" bg-white mt-10 h-fit "><img className=" h-full mb-20" src="./dr1.jpeg" alt="" /></div>
+            
+            
         </div>
       </div>
     );

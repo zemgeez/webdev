@@ -56,10 +56,10 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu >
-      <NavigationMenuList className="bg-white">
+    <NavigationMenu  className="w-full" >
+      <NavigationMenuList className="container mx-auto md:w-[800px] lg:w-[1200px] bg-white opacity-80">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Academic</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="font-light text-xl space-x-2">Academic</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white">
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
               <li className="row-span-3">
@@ -91,7 +91,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent >
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Institute</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="font-light text-xl space-x-2">Institute</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -107,7 +107,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Student</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="font-light text-xl space-x-2">Student</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               <ListItem href="student/rules" title="Rules and Regulation">
@@ -124,7 +124,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Department</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="font-light text-xl space-x-2" >Department</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               <ListItem href="department/it" title="Information Technology">
@@ -141,7 +141,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Research</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="font-light text-xl space-x-2">Research</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               <ListItem href="research/pnp" title=" Publication & Patent">
@@ -166,6 +166,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        
 
       </NavigationMenuList>
     </NavigationMenu>
