@@ -16,33 +16,36 @@ import Cardd from '@/components/cards';
 import UpcomingEvents from '@/components/upcomingeve';
 import Ani from '@/components/Ani';
 import Footer from '@/components/footer';
+import MediaC from '@/components/MediaC';
 
 
 export default function home() {
-	return (<>
-		<main className="container mx-auto pt-0 px-1 flex-grow  justify-center items-center">
-						
+	return (
+				
 			
-			<section className=' bg-cover absolute top-0 aspect-video justify-center items-center '>
+		
+			
+		
+
+		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 				<Carousel1 />
-				<br />
-				<Ani text={['Development is Nature', 'Development is Future', 'Development is Life', 'We are NIT Silchar']} />
-				<br />
-				<Tcard />
+				
+			<div className="inline-block max-w-5xl text-center justify-center">
+		<Tcard />
+				
 			
 				<Vision />
+				<MCover />
 				
-				<Footer/>
+				<LastDiv/>
+			
 				
-			</section>
-									
-		
-			
-		</main>
-			
 		
 				
-		</>
+			</div>
+		</section>
+				
+		
 	);
 		
 }

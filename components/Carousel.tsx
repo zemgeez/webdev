@@ -11,7 +11,7 @@ export default function Carousel1() {
             showThumbs={false}
             interval={3000}
             infiniteLoop
-            className="bg-cover">
+            className="bg-cover h-4/5">
            
                 <img src="./ft1.jpeg" alt="image1" />
           

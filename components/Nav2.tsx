@@ -56,8 +56,8 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu >
-      <NavigationMenuList className="bg-white">
+    <NavigationMenu  className="w-full" >
+      <NavigationMenuList className="container mx-auto md:w-[800px] lg:w-[1200px] bg-white opacity-80">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="font-light text-xl space-x-2">Academic</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white">
@@ -166,6 +166,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        
 
       </NavigationMenuList>
     </NavigationMenu>

@@ -9,7 +9,7 @@ export default function Vision() {
     return (
      
 
-                <div className="container columns-lg text-sm font-light">
+                <div className="container columns-lg text-sm font-light md:pb-4 p-4">
 
             <Card className=" hover:shadow-lg">
               <CardHeader className="flex gap-3 justify-center">

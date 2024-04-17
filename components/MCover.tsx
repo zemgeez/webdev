@@ -1,15 +1,14 @@
-'use client'
+import React from 'react';
+import { Button } from "./ui/button";
 
+class MCover extends React.Component {
+    render() {
+        return (
+              <div className=" container bg-transparent mt-5  font-light ">
+           
+            <div className=" bg-blue-900  mb-5 mt-10 ml-20 w-fit px-12  "><h1 className=" font-light text-xl py-3 text-white ">Media Coverage </h1></div>
 
-export default function MCover(){
-
-
-    return(
-        <div className=" bg-pink-50 mt-5 ">
-            <></>
-            <div className=" bg-blue-900  mb-5 mt-10 ml-20 w-fit px-12  "><h1 className=" font-bold text-xl py-3 text-white ">Media Coverage </h1></div>
-
-            <div className="  mx-20  grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-1 bg-orange-100 ">
+            <div className="  mx-20  grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-1 bg-transparent  hover:shadow-lg  ">
                 <div className="col-span-2  "><img src="./img3Copy.png" alt="" /></div>
                 <div className=" col-span-2 "><img src="./ok1.jpg" alt="" /></div>
                 <div className=" col-span-1 row-span-2 "><img src="./img4.png" alt="" /></div>
@@ -26,10 +25,13 @@ export default function MCover(){
 
             </div>
 
-            <button className=" bg-blue-700 font-semibold text-white  mb-5 w-20 h-10 ml-20 mt-5 ">
-                <h1> Next  </h1>
-            </button>
+            <Button variant='secondary'>
+                Next 
+        </Button>
 	
         </div>
-    );
+        );
+    }
 }
+
+export default MCover;
