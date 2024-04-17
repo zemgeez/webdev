@@ -39,7 +39,7 @@ export default function Tcard() {
           </div>
           <div className="flex flex-col justify-between h-full">
 
-            <Card className="max-w-[780px] bg-white justify-center mt-4 float-right">
+            <Card className="max-w-[780px] bg-transparent justify-center mt-4 float-right">
               <CardHeader className="flex gap-3 justify-center">
                 <Image
                   alt="nextui logo"
