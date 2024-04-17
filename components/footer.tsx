@@ -1,4 +1,5 @@
 
+import Link from "next/link"
 export default function Footer() {
 return(
     <div className="flex justify-center items-center px-5 text-sm p-3 font-light  pt-20 bg-transparent text-white ">
@@ -59,7 +60,19 @@ return(
             </div>
         </div>
   
-    </div>
+
+
+        {/* <div className="  ">
+            <Link href="https://cdac.in">
+                <span className="text-default-600  ">Developed By{ ''}</span>
+                <p className="text-primary">C-DAC CINE</p>
+            </Link>
+        </div> */}
+        </div>
+  
+    
+
+
 
 
 

@@ -1,42 +1,61 @@
-import React from "react";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Card, CardHeader, CardBody, Image, Divider, CardFooter } from "@nextui-org/react";
+
+// import React from "react";
+// import { Card, CardHeader, CardBody, CardFooter, Image } from 'react-bootstrap'; // Import necessary components
+
+// export default function Tcard() {
+//   return (
+//     <div className="flex flex-wrap justify-center">
+//       <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
+//         <Image
+//           alt="Card background"
+//           className="w-full"
+//           src="./dr1.jpeg"
+//         />
+//         <div className="px-6 py-4">
+//           <div className="font-bold text-xl mb-2">Prof. Dilip Kumar Baidya</div>
+//           <p className="text-gray-700 text-base">
+//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis?
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 
+
+
+import React from "react";
 
 export default function Tcard() {
   return (
     
-     
       
-    <Card className="container  bg-transparent columns-lg p-8 md:pb-4 hover:bg-green-200 ">
-              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                <p className="text-sm hover:text-3xl uppercase font-bold">Director</p>
-
-                <h4 className="font-bold text-large">Prof. Dilip Kumar Baidya</h4>
-              </CardHeader>
-              <CardBody className="overflow-visible py-2 ">
-                <div className="flex">
-                  <Image
-                    alt="Card background"
-                    className="object-cover rounded-xl ml-1"
-                    src="./dr1.jpeg"
-                    width={500}
-                    height={600}
-                  />
-
-                  <CardFooter className=" inline gap-2">
-                    
-                     National Institute Of Technology, Silchar (राष्ट्रीय प्रौद्योगिकी संस्थान, सिलचर) is one of the 31 National Institutes of Technology of India and was established in 1967 as a Regional Engineering College in Assam. In 2002 it was upgraded to the status of National Institute of Technology and was declared as Institute of National Importance under the National Institutes of Technology Act, 2007.
-                    
-                  </CardFooter>
-                </div>
-              </CardBody>
-            </Card>
-
-       
-
-
+        <div className="bg-white flex flex-wrap justify-center mt-10 hover:shadow-lg">
+          <div className=" container   md:w-screen bg-white/80 rounded-lg overflow-hidden shadow-lg m-4 md:flex lg:w-full">
+           
+            <img
+              alt="Card background"
+              className="w-full mt-16 md:w-2/3 h-2/3 lg:w-1/2 "
+              src="./dr1.jpeg"
+            />
+           
+            <div className="p-6 flex flex-col justify-center">
+              <div className="font-bold text-xl mb-4">Prof. Dilip Kumar Baidya</div>
+              <p className="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis?
+              </p>
+            </div>
+          </div>
+        </div>
+      
+    
   );
 }

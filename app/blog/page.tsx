@@ -1,23 +1,37 @@
-'use client'
-import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
-import EventPage from "@/components/event";
 
-import CardTop from "@/components/cardTp";
-import { Carousel } from 'react-responsive-carousel';
+'use client'
+
+// --------------
+// import {Card, CardFooter, Image,CardBody, Button} from "@nextui-org/react";
+// import EventPage from "@/components/event";
+
+// import CardTop from "@/components/cardTp";
+// import NewC from "@/components/Test1";
+// import { Carousel } from 'react-responsive-carousel';
+
+
+// -------------------------------
 
 {/* import EventForm from "@/components/EventForm";  */}
 
-export default function BlogPage() {
-	  return (
+// --------------------
+
+// export default function BlogPage() {
+// 	  return (
 		
-		<>
-		<div>
-			<CardTop/>
-			<br />
+// 		<>
+// 		<div>
+// 			<CardTop/>
+// 			<br />
+// {/* 
+// 			<EventPage/> */}
+// 			<br />
 
+// 			<NewC/>
 
+{/* -------------------- */}
 			
-			<div >
+			{/* <div >
 			<Carousel
 			  autoPlay
 			  showThumbs={false}
@@ -49,8 +63,8 @@ export default function BlogPage() {
 						<p className="">Image 5</p> 
 	
 					</div> 
-				</Carousel> 
-		  </div>
+				</Carousel>  */}
+		  {/* </div> */}
 
 
 
@@ -63,22 +77,49 @@ export default function BlogPage() {
 
 
 
-		   <div className=" my-5 ">
-			   <EventPage/>
+		   
+	{/* ------------------		    */}
 			
 			
-			</div>	
+		
 
-		</div>
+		{/* </div>
 
 
 
   </>
 	 );
-}
+} */}
 
-
+{/* // ---------------- */}
 		
 
 
 
+
+
+
+
+
+
+
+import React, { Component } from 'react';
+import { Card, CardFooter, Image, CardBody, Button } from "@nextui-org/react";
+import EventPage from "@/components/event";
+import CardTop from "@/components/cardTp";
+import NewC from "@/components/NewC";
+import { Carousel } from 'react-responsive-carousel';
+
+export default class BlogPage extends Component {
+    render() {
+        return (
+            <>
+                <div>
+                    <CardTop />
+                    <br />
+                    <NewC />
+                </div>
+            </>
+        );
+    }
+}

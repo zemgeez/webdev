@@ -1,5 +1,6 @@
 'use client'
 
+
 import Carousel1 from '@/components/Carousel';
 import React from "react";
 import '../styles/globals.css'
@@ -15,8 +16,14 @@ import Vision from '@/components/cardvision';
 import Cardd from '@/components/cards';
 import UpcomingEvents from '@/components/upcomingeve';
 import Ani from '@/components/Ani';
+import { NavigationMenuDemo } from '@/components/Nav2';
+
+import ViMi from '@/components/VisionM';  
+// imported by shubham
+
 import Footer from '@/components/footer';
 import MediaC from '@/components/MediaC';
+import NIRF from '@/components/NIRF';
 
 
 export default function home() {
@@ -46,6 +53,29 @@ export default function home() {
 		</section>
 				
 		
+				<br />
+				<Tcard />
+				<Vision />
+				
+				<NIRF/>
+
+				<Footer/>
+				
+				
+			</section>
+							
+		
+			
+			
+					
+					
+		
+			
+		</main>
+			
+		
+				
+		</>
 	);
 		
 }
