@@ -1,3 +1,4 @@
+'use client'
 // import React, { useState } from 'react';
 // import frontImage from './eve1.png'; // Import front image
 // import backImage from './eve3.png'; // Import back image
@@ -27,51 +28,53 @@
 
 // export default FlipCard;
 
-import React, { useState } from 'react';
-var pimages = [
-    {
-        "name": "test1",
-        "src": "./eve1.png"
-    },
-    {
-        "name": "test1",
-        "src": "./eve1.png"
-    },    
-    {
-        "name": "test1",
-        "src": "./eve3.png"
-    },
-    {
-        "name": "test1",
-        "src": "./eve2.png"
-    },
-    {
-        "name": "test1",
-        "src": "./eve3.png"
-    },
-    {
-        "name": "test1",
-        "src": "./eve3.png"
-    },
-    {
-        "name": "test1",
-        "src": "./eve3.png"
-    },
-    {
-        "name": "test1",
-        "src": "./eve3.png"
-    },
-    {
-        "name": "test1",
-        "src": "./eve3.png"
-    }
-]
-var imgSorces = ['./eve7.png', './eve2.png', './eve3.png']
+
+// ---------------------------
+// import React, { useState } from 'react';
+// var pimages = [
+//     {
+//         "name": "test1",
+//         "src": "./eve1.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve1.png"
+//     },    
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve2.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     }
+// ]
+// var imgSorces = ['./eve7.png', './eve2.png', './eve3.png']
+
+// -----------------------------------
 
 
-
-
-var num = [1,2,3,4];
+// var num = [1,2,3,4];
 // var kuch = num.map((Xs) => Xs * 2 );
 
 // const users = [
@@ -86,13 +89,13 @@ var num = [1,2,3,4];
 
 
   
-
+// -------------------------
   
 
-export default function NewC() {
+// export default function NewC() {
 
 
-    
+    // -------------------------
 
     // const [filteredUsers, setFilteredUsers] = useState(users);
 
@@ -103,27 +106,33 @@ export default function NewC() {
     //   };
 
 
+// -----------------------------
 
 
-
-    return(
-        <>
-        <div className='  grid grid-rows-3 grid-flow-col'>
-        {
-            pimages.map(x => {
-                return (
-                    <div className='bg-blue-400 py-10 px-10  '>
-                    <div className="">
-                      <img className="h-22" src={x.src} alt={x.name} />
-                      {/* <hr className="w-full border-t border-gray-500 mt-2" /> */}
-                    </div>
-                    </div>
-                  );
+    // return(
+    //     <>
+    //     <div className='  grid grid-rows-3 grid-flow-col'>
+    //     {
+    //         pimages.map(x => {
+    //             return (
+    //                 <div className='bg-blue-400 py-10 px-10  '>
+    //                 <div className="">
+    //                   <img className="h-22" src={x.src} alt={x.name} />
+    //                   {/* <hr className="w-full border-t border-gray-500 mt-2" /> */}
+    //                 </div>
+    //                 </div>
+    //               );
                   
 
-            })
-        }
-        </div>
+    //         })
+    //     }
+    //     </div>
+
+{/* --------------------------------------------------------------------------------- */}
+
+
+
+
         
 
 {/* {
@@ -181,6 +190,74 @@ export default function NewC() {
             
     
         </div> */}
-        </>
-    );
-}
+
+//  ---------------------       
+        // </>
+//     );
+// }
+// ------------
+
+
+
+
+
+
+// import React, { Component } from 'react';
+
+// var pimages = [
+//     {
+//         "name": "test1",
+//         "src": "./eve1.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve1.png"
+//     },    
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve2.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     },
+//     {
+//         "name": "test1",
+//         "src": "./eve3.png"
+//     }
+// ];
+
+// export default class NewC extends Component {
+//     render() {
+//         return (
+//             <div className='grid grid-rows-3 grid-flow-col'>
+//                 {pimages.map(x => (
+//                     <div className='bg-blue-400 py-10 px-10'>
+//                         <div>
+//                             <img className="h-22" src={x.src} alt={x.name} />
+//                         </div>
+//                     </div>
+//                 ))}
+//             </div>
+//         );
+//     }
+// }
+
+
+

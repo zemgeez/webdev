@@ -21,6 +21,7 @@ import ViMi from '@/components/VisionM';
 // imported by shubham
 
 import Footer from '@/components/footer';
+import NIRF from '@/components/NIRF';
 
 
 export default function home() {
@@ -38,7 +39,10 @@ export default function home() {
 				<Tcard />
 				<Vision />
 				
+				<NIRF/>
+
 				<Footer/>
+				
 				
 			</section>
 							
